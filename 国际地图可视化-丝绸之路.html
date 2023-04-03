@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/world.js"></script>
+
+</head>
+<body >
+    <div id="5980ed7799d845cd9b63fb7b716781e1" class="chart-container" style="width:1920px; height:1080px; "></div>
+    <script>
+        var chart_5980ed7799d845cd9b63fb7b716781e1 = echarts.init(
+            document.getElementById('5980ed7799d845cd9b63fb7b716781e1'), 'white', {renderer: 'canvas'});
+        var option_5980ed7799d845cd9b63fb7b716781e1 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "GREEN",
+        "#808000",
+        "#DAA520",
+        "blue",
+        "#00FFFF",
+        "#48D1CC",
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "effectScatter",
+            "coordinateSystem": "geo",
+            "showEffectOn": "render",
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "symbolSize": 20,
+            "data": [
+                {
+                    "name": "Xi-an",
+                    "value": [
+                        108.94,
+                        34.34,
+                        50
+                    ]
+                },
+                {
+                    "name": "Duisburg",
+                    "value": [
+                        6.77,
+                        51.43,
+                        50
+                    ]
+                }
+            ],
+            "label": {
+                "show": true,
+                "margin": 8,
+                "formatter": "{b}"
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbolSize": 18,
+            "data": [
+                {
+                    "name": "lanzhou",
+                    "value": [
+                        103.83,
+                        36.96,
+                        10
+                    ]
+                },
+                {
+                    "name": "Urumqi",
+                    "value": [
+                        87.62,
+                        43.83,
+                        10
+                    ]
+                },
+                {
+                    "name": "Khorgas",
+                    "value": [
+                        80.43,
+                        44.0,
+                        10
+                    ]
+                },
+                {
+                    "name": "Bishkek",
+                    "value": [
+                        74.58,
+                        42.87,
+                        10
+                    ]
+                },
+                {
+                    "name": "Dushanbe",
+                    "value": [
+                        68.78,
+                        38.56,
+                        10
+                    ]
+                },
+                {
+                    "name": "Samarkand",
+                    "value": [
+                        66.97,
+                        39.63,
+                        10
+                    ]
+                },
+                {
+                    "name": "Tehran",
+                    "value": [
+                        51.39,
+                        35.69,
+                        10
+                    ]
+                },
+                {
+                    "name": "Istanbul",
+                    "value": [
+                        28.98,
+                        41.01,
+                        10
+                    ]
+                },
+                {
+                    "name": "Moscow",
+                    "value": [
+                        37.61,
+                        55.76,
+                        10
+                    ]
+                }
+            ],
+            "label": {
+                "show": true,
+                "margin": 8,
+                "formatter": "{b}"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "\u9646\u4e0a\u4e1d\u7ef8\u4e4b\u8def",
+            "coordinateSystem": "geo",
+            "zlevel": 4,
+            "progressive": 400,
+            "progressiveThreshold": 3000,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4,
+                "color": "#DAA520",
+                "symbol": "arrow",
+                "symbolSize": 5
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Xi-an->lanzhou",
+                    "coords": [
+                        [
+                            108.94,
+                            34.34
+                        ],
+                        [
+                            103.83,
+                            36.96
+                        ]
+                    ]
+                },
+                {
+                    "name": "lanzhou->Urumqi",
+                    "coords": [
+                        [
+                            103.83,
+                            36.96
+                        ],
+                        [
+                            87.62,
+                            43.83
+                        ]
+                    ]
+                },
+                {
+                    "name": "Urumqi->Khorgas",
+                    "coords": [
+                        [
+                            87.62,
+                            43.83
+                        ],
+                        [
+                            80.43,
+                            44.0
+                        ]
+                    ]
+                },
+                {
+                    "name": "Khorgas->Bishkek",
+                    "coords": [
+                        [
+                            80.43,
+                            44.0
+                        ],
+                        [
+                            74.58,
+                            42.87
+                        ]
+                    ]
+                },
+                {
+                    "name": "Bishkek->Dushanbe",
+                    "coords": [
+                        [
+                            74.58,
+                            42.87
+                        ],
+                        [
+                            68.78,
+                            38.56
+                        ]
+                    ]
+                },
+                {
+                    "name": "Dushanbe->Samarkand",
+                    "coords": [
+                        [
+                            68.78,
+                            38.56
+                        ],
+                        [
+                            66.97,
+                            39.63
+                        ]
+                    ]
+                },
+                {
+                    "name": "Samarkand->Tehran",
+                    "coords": [
+                        [
+                            66.97,
+                            39.63
+                        ],
+                        [
+                            51.39,
+                            35.69
+                        ]
+                    ]
+                },
+                {
+                    "name": "Tehran->Istanbul",
+                    "coords": [
+                        [
+                            51.39,
+                            35.69
+                        ],
+                        [
+                            28.98,
+                            41.01
+                        ]
+                    ]
+                },
+                {
+                    "name": "Istanbul->Moscow",
+                    "coords": [
+                        [
+                            28.98,
+                            41.01
+                        ],
+                        [
+                            37.61,
+                            55.76
+                        ]
+                    ]
+                },
+                {
+                    "name": "Moscow->Duisburg",
+                    "coords": [
+                        [
+                            37.61,
+                            55.76
+                        ],
+                        [
+                            6.77,
+                            51.43
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0.2,
+                "type": "solid"
+            },
+            "label": {
+                "show": false,
+                "margin": 8
+            }
+        },
+        {
+            "type": "effectScatter",
+            "coordinateSystem": "geo",
+            "showEffectOn": "render",
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "symbolSize": 20,
+            "data": [
+                {
+                    "name": "Fuzhou",
+                    "value": [
+                        119.3,
+                        26.08,
+                        50
+                    ]
+                },
+                {
+                    "name": "Rotterdam",
+                    "value": [
+                        4.48,
+                        51.92,
+                        50
+                    ]
+                }
+            ],
+            "label": {
+                "show": true,
+                "margin": 8,
+                "formatter": "{b}"
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbolSize": 18,
+            "data": [
+                {
+                    "name": "Guangzhou",
+                    "value": [
+                        113.23,
+                        23.16,
+                        10
+                    ]
+                },
+                {
+                    "name": "Hanoi",
+                    "value": [
+                        105.55,
+                        21.03,
+                        10
+                    ]
+                },
+                {
+                    "name": "Kuala Lumpur",
+                    "value": [
+                        101.7,
+                        3.13,
+                        10
+                    ]
+                },
+                {
+                    "name": "Jakarta",
+                    "value": [
+                        106.49,
+                        -6.09,
+                        10
+                    ]
+                },
+                {
+                    "name": "Kolkata",
+                    "value": [
+                        88.22,
+                        22.34,
+                        10
+                    ]
+                },
+                {
+                    "name": "Colombo",
+                    "value": [
+                        79.85,
+                        6.93,
+                        10
+                    ]
+                },
+                {
+                    "name": "Nairobi",
+                    "value": [
+                        36.82,
+                        -1.28,
+                        10
+                    ]
+                },
+                {
+                    "name": "Athens",
+                    "value": [
+                        23.73,
+                        37.98,
+                        10
+                    ]
+                },
+                {
+                    "name": "Venice",
+                    "value": [
+                        12.34,
+                        45.44,
+                        10
+                    ]
+                }
+            ],
+            "label": {
+                "show": true,
+                "margin": 8,
+                "formatter": "{b}"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "\u6d77\u4e0a\u4e1d\u7ef8\u4e4b\u8def",
+            "coordinateSystem": "geo",
+            "zlevel": 7,
+            "progressive": 400,
+            "progressiveThreshold": 3000,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4,
+                "symbol": "arrow",
+                "symbolSize": 5
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Fuzhou->Guangzhou",
+                    "coords": [
+                        [
+                            119.3,
+                            26.08
+                        ],
+                        [
+                            113.23,
+                            23.16
+                        ]
+                    ]
+                },
+                {
+                    "name": "Guangzhou->Hanoi",
+                    "coords": [
+                        [
+                            113.23,
+                            23.16
+                        ],
+                        [
+                            105.55,
+                            21.03
+                        ]
+                    ]
+                },
+                {
+                    "name": "Hanoi->Kuala Lumpur",
+                    "coords": [
+                        [
+                            105.55,
+                            21.03
+                        ],
+                        [
+                            101.7,
+                            3.13
+                        ]
+                    ]
+                },
+                {
+                    "name": "Kuala Lumpur->Jakarta",
+                    "coords": [
+                        [
+                            101.7,
+                            3.13
+                        ],
+                        [
+                            106.49,
+                            -6.09
+                        ]
+                    ]
+                },
+                {
+                    "name": "Jakarta->Kolkata",
+                    "coords": [
+                        [
+                            106.49,
+                            -6.09
+                        ],
+                        [
+                            88.22,
+                            22.34
+                        ]
+                    ]
+                },
+                {
+                    "name": "Kolkata->Colombo",
+                    "coords": [
+                        [
+                            88.22,
+                            22.34
+                        ],
+                        [
+                            79.85,
+                            6.93
+                        ]
+                    ]
+                },
+                {
+                    "name": "Colombo->Nairobi",
+                    "coords": [
+                        [
+                            79.85,
+                            6.93
+                        ],
+                        [
+                            36.82,
+                            -1.28
+                        ]
+                    ]
+                },
+                {
+                    "name": "Nairobi->Athens",
+                    "coords": [
+                        [
+                            36.82,
+                            -1.28
+                        ],
+                        [
+                            23.73,
+                            37.98
+                        ]
+                    ]
+                },
+                {
+                    "name": "Athens->Venice",
+                    "coords": [
+                        [
+                            23.73,
+                            37.98
+                        ],
+                        [
+                            12.34,
+                            45.44
+                        ]
+                    ]
+                },
+                {
+                    "name": "Venice->Rotterdam",
+                    "coords": [
+                        [
+                            12.34,
+                            45.44
+                        ],
+                        [
+                            4.48,
+                            51.92
+                        ]
+                    ]
+                },
+                {
+                    "name": "Kolkata->Nairobi",
+                    "coords": [
+                        [
+                            88.22,
+                            22.34
+                        ],
+                        [
+                            36.82,
+                            -1.28
+                        ]
+                    ]
+                },
+                {
+                    "name": "Kuala Lumpur->Colombo",
+                    "coords": [
+                        [
+                            101.7,
+                            3.13
+                        ],
+                        [
+                            79.85,
+                            6.93
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0.2,
+                "type": "solid"
+            },
+            "label": {
+                "show": false,
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "",
+                "",
+                "\u9646\u4e0a\u4e1d\u7ef8\u4e4b\u8def",
+                "",
+                "",
+                "\u6d77\u4e0a\u4e1d\u7ef8\u4e4b\u8def"
+            ],
+            "selected": {
+                "": true,
+                "\u9646\u4e0a\u4e1d\u7ef8\u4e4b\u8def": true,
+                "\u6d77\u4e0a\u4e1d\u7ef8\u4e4b\u8def": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "title": [
+        {
+            "show": true,
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "geo": {
+        "map": "world",
+        "roam": true,
+        "aspectScale": 0.75,
+        "nameProperty": "name",
+        "selectedMode": false,
+        "emphasis": {}
+    }
+};
+        chart_5980ed7799d845cd9b63fb7b716781e1.setOption(option_5980ed7799d845cd9b63fb7b716781e1);
+    </script>
+</body>
+</html>
